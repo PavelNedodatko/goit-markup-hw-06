@@ -317,6 +317,7 @@ textarea {
 }
 
 .modal {
+  display: block;
   height: 581px;
   width: 528px;
   background-color: #ffffff;
