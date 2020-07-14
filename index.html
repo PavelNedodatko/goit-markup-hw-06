@@ -70,32 +70,36 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <a href="" class="close-cross-button">
-            <!-- <button class="close-cross-button"> -->
-              <!-- <svg>
-                <use href="./img/vector.svg"></use>
-              </svg> -->
-            <!-- </button> -->
             <img src="./img/close-black.svg" alt="крестик" />
             </a>
             <form class="form">
               <p class="form-field-text">Оставьте свои данные, мы вам перезвоним</p>
               <div class="form-field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name"/>
+                <input type="text" class="form-input" name="name" id="name" placeholder=" "/>
+                <label for="name" class="form-label">Имя</label>
+                  <svg class="icon">
+                    <use href="./img/sprite.modalwindow.svg#icon-person-black"></use>
+                  </svg>
               </div>
               <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel"/>
+                <input type="tel" class="form-input" name="tel" id="tel" placeholder=" "/>
+                <label for="tel" class="form-label">Телефон</label>
+              <svg class="icon">
+                <use href="./img/sprite.modalwindow.svg#icon-phone-black"></use>
+              </svg>
               </div> 
               <div class="form-field">
-                <label for="email">Почта</label>
-                <input type="email" name="email" id="email"/>
+                <input type="email" class="form-input" name="email" id="email" placeholder=" " />
+                <label for="email" class="form-label">Почта</label>
+              <svg class="icon">
+                <use href="./img/sprite.modalwindow.svg#icon-email-black"></use>
+              </svg>
               </div>
               <div class="form-field-textarea">
                 <textarea name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
               </div>
               <div class="form-field-checkbox">
-                <input type="checkbox" name="license" value="license" id="license">
+                <input type="checkbox" name="license" value="license" id="license" />
                 <label for="license">Соглашаюсь с рассылкой и принимаю Условия договора</label>
               </div>
               <button type="submit" class="primary-button-modal" data-modal-close>Отправить</button>
@@ -171,8 +175,9 @@
               <p class="team-function">Product Designer</p>
               <a href="" class="social-links">
                 <svg class="social-links-item">
-                  <use href="./img/sprite.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               <a href="" class="social-links">
                 <svg class="social-links-item">
                   <use href="./img/sprite.svg#icon-twitter"></use></svg
