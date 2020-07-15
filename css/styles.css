@@ -392,10 +392,12 @@ border-radius: 2px;
 color: var(--accent-color);  
 transform: translate(-30px,-40px);
 border-color: var(--accent-color);
+
 }
 
 .form-input:focus {
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
  .form-input:focus ~ .icon {
