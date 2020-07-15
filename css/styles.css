@@ -429,11 +429,12 @@ border-color: var(--accent-color);
 .form-field-textarea textarea {
 width: 100%;
 height: 120px;
+outline: none;
 }
 
-.form-field-textarea:hover textarea,
+
 .form-field-textarea:focus textarea {
-  color: var(--accent-color); 
+  border-color: var(--accent-color);
 }
 
 textarea {
