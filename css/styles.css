@@ -335,7 +335,7 @@ color: var(--accent-color);
   height: 30px;
   border-radius: 50%;
   background-color: #ffffff;
-  border: solid 1px var(--dark-grey-footer);
+  /* border: solid 1px var(--dark-grey-footer); */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -403,9 +403,6 @@ border-color: var(--accent-color);
   padding-left: 42px;
 }
 
-/* .form-input:placeholder-shown {
-
-} */
 .icon {
   position: absolute;
   width: 18px;
@@ -435,28 +432,66 @@ height: 120px;
 textarea {
   resize: none;
 }
+
 .form-field-checkbox {
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 28px; 
+}
+
+.checkbox {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 
 .form-field-checkbox label{
   display: flex;
   align-items: center;
-  margin-left: 8px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
 
-/* стилизует чекбокс (галочку в прямоугольнике) */
-/* .form-field-checkbox input[type="checkbox"] {
-  width: 40px;
-  height: 40px;
-} */
+.label::before {
+  content: "";
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-right: 8px;
+  margin-left: 12px;
+}
+
+.checkbox:checked + .label::before {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../img/icon\ check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.label {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked ~ .label {
+transform: scale(1.05)
+}
+
+.licence-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  margin-left: 4px;
+}
 
 .primary-button-modal {
   display: inline-flex;
@@ -751,6 +786,7 @@ textarea {
 .social-invintation {
   margin-top: 57px;
   margin-left: 69px;
+  margin-bottom: 0px;
 }
 
 .social-invintation a{ 
@@ -758,7 +794,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-footer {
-  margin-top: 16px;
+  margin-top: 2px;
   display: inline-flex;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -788,8 +824,25 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sign-up {
-  margin-top: 65px;
+  margin-top: 20px;
   margin-left: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input-footer {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--dark-grey-footer);
+}
+
+.position-footer-button {
+  margin-top: 84px;
+  margin-left: 12px;
 }
 
 .signature-border {

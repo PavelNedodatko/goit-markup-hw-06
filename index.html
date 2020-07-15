@@ -99,8 +99,8 @@
                 <textarea name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
               </div>
               <div class="form-field-checkbox">
-                <input type="checkbox" name="license" value="license" id="license" />
-                <label for="license">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <input class="checkbox" type="checkbox" name="license" value="license" id="license" />
+                <label class="label" for="license">Соглашаюсь с рассылкой и принимаю <a href="" class="licence-link">Условия договора</a></label>
               </div>
               <button type="submit" class="primary-button-modal" data-modal-close>Отправить</button>
             </form>
@@ -359,7 +359,15 @@
           </div>
         </section>
         <div class="sign-up">
-          <a href="" class="primary-button">
+          <form class="form-footer">
+            <div class="sign-up">
+             <p class="invitation">подпишитесь на рассылку</p>
+             <input type="email" class="form-input-footer" name="email" id="email" placeholder="E-mail" />
+            </div>
+          </form>
+        </div>
+        <div class="position-footer-button">
+            <a href="" class="primary-button">
             Подписаться<span class="btn-icon"></span
           ></a>
         </div>
